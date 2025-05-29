@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seconds - Teste</title>
+  <title>Seconds - Home</title>
   <style>
     body {
       margin: 0;
@@ -27,9 +27,16 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: auto;
       padding: 2rem 1rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
 
     .card {
@@ -39,13 +46,12 @@
       padding: 2rem;
       text-align: center;
       width: 280px;
-      margin: auto;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .card:hover {
       transform: translateY(-5px) scale(1.03);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .card img {
@@ -56,6 +62,7 @@
 
     .card h3 {
       color: #6D499F;
+      margin-bottom: 0.5rem;
     }
 
     footer {
@@ -63,7 +70,19 @@
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
@@ -73,15 +92,47 @@
   </header>
 
   <section class="container">
-    <div class="card">
-      <img src="icone-crescimento.png" alt="Icone Crescimento">
-      <h3>Crescimento em Vendas</h3>
-      <p>Ferramenta inteligente para vender mais com menos esforço.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="icone-crescimento.png" alt="Crescimento em Vendas">
+        <h3>Crescimento em Vendas</h3>
+        <p>Ferramentas inteligentes para vender mais com menos esforço.</p>
+      </div>
+
+      <div class="card">
+        <img src="icone-marketing.png" alt="Campanhas Otimizadas">
+        <h3>Campanhas Otimizadas</h3>
+        <p>Automatize suas promoções e conquiste novos clientes.</p>
+      </div>
+
+      <div class="card">
+        <img src="icone-alvo.png" alt="Precisão Analítica">
+        <h3>Precisão Analítica</h3>
+        <p>Relatórios que ajudam você a tomar decisões inteligentes.</p>
+      </div>
+
+      <div class="card">
+        <img src="icone-certificado1.png" alt="Consultoria Certificada">
+        <h3>Consultoria Certificada</h3>
+        <p>Reconhecidos pelo Mercado Livre como especialistas em performance.</p>
+      </div>
+
+      <div class="card">
+        <img src="icone-certificado2.png" alt="App Certified">
+        <h3>App Certified Platinum</h3>
+        <p>Aplicativo homologado para operações seguras e otimizadas.</p>
+      </div>
+
+      <div class="card">
+        <img src="icone-lgpd.png" alt="LGPD Compliance">
+        <h3>LGPD Compliance</h3>
+        <p>Segurança total de dados para você e seus clientes.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Seconds Tecnologia</p>
+    <p>&copy; 2025 Seconds Tecnologia. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
