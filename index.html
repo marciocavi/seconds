@@ -84,52 +84,99 @@
         margin-bottom: 1rem;
       }
     }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">Seconds</div>
-  </header>
+ <style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #07000A;
+  }
 
-  <section class="container">
-    <div class="cards">
-      <div class="card">
-        <img src="icone-crescimento.png" alt="Crescimento em Vendas">
-        <h3>Crescimento em Vendas</h3>
-        <p>Ferramentas inteligentes para vender mais com menos esforço.</p>
-      </div>
+  header {
+    background-color: #6D499F;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-      <div class="card">
-        <img src="icone-marketing.png" alt="Anúncio Perfeito">
-        <h3>Anúncio Perfeito</h3>
-        <p>Automatize suas promoções e conquiste novos clientes.</p>
-      </div>
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-      <div class="card">
-        <img src="icone-alvo.png" alt="Análise de Concorrência">
-        <h3>Análise de Concorrência</h3>
-        <p>Relatórios que ajudam você a tomar decisões inteligentes.</p>
-      </div>
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
 
-      <div class="card">
-        <img src="icone-certificado1.png" alt="Consultoria Certificada">
-        <h3>Consultoria Certificada</h3>
-        <p>Reconhecidos pelo Mercado Livre como especialistas em performance.</p>
-      </div>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
 
-      <div class="card">
-        <img src="icone-certificado2.png" alt="App Certified">
-        <h3>App Certified Platinum</h3>
-        <p>Aplicativo homologado para operações seguras e otimizadas.</p>
-      </div>
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 280px;
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-      <div class="card">
-        <img src="icone-lgpd.png" alt="LGPD Compliance">
-        <h3>LGPD Compliance</h3>
-        <p>Segurança total de dados para você e seus clientes.</p>
-      </div>
-    </div>
-  </section>
+  .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+
+  .card h3 {
+    color: #6D499F;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 95%;
+    }
+
+    .card:hover {
+      transform: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+  }
+</style>
 
   <footer>
     <p>&copy; 2025 Seconds Tecnologia. Todos os direitos reservados.</p>
