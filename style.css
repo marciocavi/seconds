@@ -37,7 +37,7 @@ header .logo {
 .card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   padding: 2rem;
   text-align: center;
   width: 280px;
