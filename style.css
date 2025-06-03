@@ -32,12 +32,12 @@ header .logo {
   font-weight: bold;
 }
 
-/* === CONTAINER E TÍTULOS === */
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 6rem 1rem 2rem 1rem; /* Aumenta o top para compensar o header fixo */
+  padding: 7rem 1rem 2rem 1rem; /* ↑ espaço extra no topo (7rem) */
 }
+
 
 .secao-titulo {
   text-align: center;
