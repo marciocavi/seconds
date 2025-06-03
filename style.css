@@ -39,9 +39,6 @@ header .logo {
   padding-top: 0; /* ou remova esta linha */
 }
 
-.banner-duplo {
-  padding-top: 100px; /* valor suficiente para compensar o header fixo */
-}
 
 
 
@@ -110,10 +107,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 100px 1rem 1rem 1rem; /* topo 100px para compensar o cabeçalho fixo */
   gap: 1rem;
   max-width: 1200px;
 }
+
 
 .card-banner {
   flex: 1 1 400px;
