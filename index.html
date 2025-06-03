@@ -1,62 +1,56 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seconds - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.banner-duplo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1200px;
+}
 
-  <header>
-    <div class="logo">Seconds</div>
-  </header>
+.card-banner {
+  flex: 1 1 400px;
+  min-height: 200px;
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
 
- <section class="container">
+.card-banner.roxo {
+  background: linear-gradient(135deg, #6D499F, #8a63d2);
+}
 
-  <h2 class="secao-titulo">Funcionalidades</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="icone-crescimento.png" alt="Crescimento">
-      <h3>Crescimento em Vendas</h3>
-      <p>Ferramentas inteligentes para vender mais com menos esforço.</p>
-    </div>
-    <div class="card">
-      <img src="icone-marketing.png" alt="Marketing">
-      <h3>Campanhas Otimizadas</h3>
-      <p>Automatize suas promoções e conquiste novos clientes.</p>
-    </div>
-    <div class="card">
-      <img src="icone-alvo.png" alt="Alvo">
-      <h3>Precisão Analítica</h3>
-      <p>Relatórios que ajudam você a tomar decisões inteligentes.</p>
-    </div>
-  </div>
+.card-banner.amarelo {
+  background: linear-gradient(135deg, #FFD700, #f5c000);
+  color: #333;
+}
 
-  <h2 class="secao-titulo">Selos e Segurança</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="icone-certificado1.png" alt="Certificação 1">
-      <h3>Consultoria Certificada</h3>
-      <p>Reconhecidos pelo Mercado Livre como especialistas em performance.</p>
-    </div>
-    <div class="card">
-      <img src="icone-certificado2.png" alt="Certificação 2">
-      <h3>App Certified Platinum</h3>
-      <p>Aplicativo homologado para operações seguras e otimizadas.</p>
-    </div>
-    <div class="card">
-      <img src="icone-lgpd.png" alt="LGPD">
-      <h3>LGPD Compliance</h3>
-      <p>Segurança total de dados para você e seus clientes.</p>
-    </div>
-  </div>
+.botao-raiox {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: #6D499F;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
 
-</section>
+.botao-raiox:hover {
+  background-color: #f1f1f1;
+}
 
-
-  <footer>
-    <p>&copy; 2025 Seconds Tecnologia. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+@media (max-width: 768px) {
+  .card-banner {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
