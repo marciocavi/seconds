@@ -1,19 +1,14 @@
-/* Estilo base */
+/* Corpo */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, rgba(173, 216, 230, 0.3), rgba(240, 248, 255, 0.3)),
-              url("marca-dagua.png");
-  background-size: 150px;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background: url('fundo-icons.svg') repeat;
+  background-size: 200px;
+  background-color: #eaf6fb;
   color: #07000A;
 }
 
-
-
-/* Cabeçalho */
+/* Cabeçalho fixo */
 header {
   background-color: #6D499F;
   color: white;
@@ -22,25 +17,77 @@ header {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Container central */
+/* Container principal com espaçamento compensando cabeçalho fixo */
 .container {
-  padding-top: 0; /* ou remova esta linha */
+  max-width: 1200px;
+  margin: auto;
+  padding: 7rem 1rem 2rem 1rem; /* espaço acima para não ficar atrás do header */
 }
 
+/* Seção dupla roxa + amarela */
+.banner-duplo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1200px;
+}
 
+.card-banner {
+  flex: 1 1 48%;
+  min-height: 250px;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: pulse 3s infinite;
+}
 
+.card-banner.roxo {
+  background: linear-gradient(135deg, rgba(109,73,159,0.9), rgba(138,99,210,0.9));
+  color: white;
+}
+
+.card-banner.amarelo {
+  background: linear-gradient(135deg, rgba(255,215,0,0.9), rgba(245,192,0,0.9));
+  color: #333;
+}
+
+/* Botão roxo */
+.botao-raiox {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: #6D499F;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+.botao-raiox:hover {
+  background-color: #f1f1f1;
+}
 
 /* Título das seções */
 .secao-titulo {
@@ -51,7 +98,7 @@ header .logo {
   font-weight: bold;
 }
 
-/* Cards padrão */
+/* Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -68,11 +115,12 @@ header .logo {
   width: 280px;
   max-width: 90%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 3s infinite;
 }
 
 .card:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -92,7 +140,7 @@ header .logo {
   line-height: 1.4;
 }
 
-/* Footer */
+/* Rodapé */
 footer {
   background-color: #000;
   color: white;
@@ -101,70 +149,17 @@ footer {
   margin-top: 4rem;
 }
 
-/* Banner duplo */
-.banner-duplo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2rem auto;
-  padding: 100px 1rem 1rem 1rem; /* topo 100px para compensar o cabeçalho fixo */
-  gap: 1rem;
-  max-width: 1200px;
-}
-
-
-.card-banner {
-  flex: 1 1 400px;
-  min-height: 240px;
-  border-radius: 16px;
-  padding: 2rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.2rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-banner:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-}
-
-/* Estilos individuais dos banners */
-.card-banner.roxo {
-  background: linear-gradient(135deg, rgba(109,73,159,0.9), rgba(138,99,210,0.9));
-}
-
-.card-banner.amarelo {
-  background: linear-gradient(135deg, rgba(255,215,0,0.9), rgba(245,192,0,0.9));
-  color: #333;
-}
-
-/* Botão no card amarelo */
-.botao-raiox {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: white;
-  color: #6D499F;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  transition: background 0.3s;
-}
-
-.botao-raiox:hover {
-  background-color: #f1f1f1;
+/* Animação pulse */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.01); }
+  100% { transform: scale(1); }
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .container {
-    padding: 1rem 0;
+    padding-top: 6.5rem;
   }
 
   .cards {
@@ -176,15 +171,14 @@ footer {
   .card {
     width: calc(100% - 2rem);
     max-width: 600px;
-    margin: 0 auto;
     padding: 0.8rem;
     box-sizing: border-box;
   }
 
   .card-banner {
+    flex: 1 1 100%;
     font-size: 1rem;
     padding: 1.5rem;
-    min-height: auto;
   }
 }
 
