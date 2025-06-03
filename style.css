@@ -122,27 +122,71 @@ footer {
 }
 
 .card-banner {
-  flex: 1 1 400px;
-  min-height: 200px;
   border-radius: 16px;
   padding: 2rem;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   font-size: 1.2rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* sombra igual aos cards */
+  height: 320px;
 }
 
+/* Hover com efeito pulse */
+.card-banner:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradiente transparente roxo */
 .card-banner.roxo {
-  background: linear-gradient(135deg, #6D499F, #8a63d2);
+  flex: 0 0 60%;
+  background: linear-gradient(135deg, rgba(109, 73, 159, 0.8), rgba(138, 99, 210, 0.6));
+  color: white;
 }
 
+/* Gradiente transparente amarelo */
 .card-banner.amarelo {
-  background: linear-gradient(135deg, #FFD700, #f5c000);
+  flex: 0 0 38%;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.8), rgba(245, 192, 0, 0.6));
   color: #333;
 }
+
+/* Botão Raio X */
+.botao-raiox {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: #6D499F;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+.botao-raiox:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card-banner {
+    flex: 1 1 100%;
+    height: auto;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .card-banner.roxo,
+  .card-banner.amarelo {
+    flex: 1 1 100%;
+  }
+}
+
 
 .botao-raiox {
   display: inline-block;
