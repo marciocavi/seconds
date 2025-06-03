@@ -87,8 +87,10 @@ header .logo {
   margin: 2rem auto;
   padding: 1rem;
   gap: 1rem;
-  max-width: 1200px;
+  max-width: 1200px;     /* <-- Isso centraliza e limita igual aos outros */
+  width: 100%;
 }
+
 
 .card-banner {
   flex: 1 1 400px;
