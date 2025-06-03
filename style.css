@@ -36,8 +36,13 @@ header .logo {
 
 /* Container central */
 .container {
-  padding-top: 80px; /* compensa a altura do header fixo */
+  padding-top: 0; /* ou remova esta linha */
 }
+
+.banner-duplo {
+  padding-top: 100px; /* valor suficiente para compensar o header fixo */
+}
+
 
 
 /* Título das seções */
