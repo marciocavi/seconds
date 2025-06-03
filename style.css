@@ -35,7 +35,9 @@ header .logo {
 }
 
 .card {
-  background: white;
+  background: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+}
+
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   padding: 2rem;
