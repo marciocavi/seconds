@@ -2,9 +2,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, rgba(173,216,230,0.6), rgba(240,248,255,0.6));
+  background: linear-gradient(to bottom right, rgba(173,216,230,0.6), rgba(240,248,255,0.6)),
+              url('bg-pattern.png');
+  background-repeat: repeat;
+  background-size: 150px;
+  background-attachment: fixed;
   color: #07000A;
 }
+
 
 /* Cabeçalho */
 header {
