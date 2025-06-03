@@ -102,3 +102,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   }
 }
+
+.secao-titulo {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #6D499F;
+  margin: 3rem 0 1.5rem 0;
+  font-weight: bold;
+}
