@@ -110,3 +110,60 @@ footer {
   margin: 3rem 0 1.5rem 0;
   font-weight: bold;
 }
+
+.banner-duplo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1200px;
+}
+
+.card-banner {
+  flex: 1 1 400px;
+  min-height: 200px;
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-banner.roxo {
+  background: linear-gradient(135deg, #6D499F, #8a63d2);
+}
+
+.card-banner.amarelo {
+  background: linear-gradient(135deg, #FFD700, #f5c000);
+  color: #333;
+}
+
+.botao-raiox {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: #6D499F;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+.botao-raiox:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .card-banner {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
