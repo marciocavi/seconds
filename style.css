@@ -36,10 +36,9 @@ header .logo {
 
 /* Container central */
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 1rem;
+  padding-top: 80px; /* compensa a altura do header fixo */
 }
+
 
 /* Título das seções */
 .secao-titulo {
