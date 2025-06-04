@@ -20,7 +20,7 @@ body::before {
   background-size: 200px; /* ou outro valor que fique bom */
   background-repeat: repeat; /* repete a imagem */
   background-position: center;
-  opacity: 0.18; /* ajuste conforme desejar */
+  opacity: 0.5; /* ajuste conforme desejar */
   pointer-events: none;
   z-index: 0;
 }
