@@ -155,12 +155,12 @@ header {
 }
 
 .card-banner.roxo {
-  background: linear-gradient(135deg, rgba(109,73,159,0.7), rgba(138,99,210,0.7));
+  background: linear-gradient(135deg, #6d499f, #8a63d2);
   color: white;
 }
 
 .card-banner.amarelo {
-  background: linear-gradient(135deg, rgba(255,215,0,0.7), rgba(245,192,0,0.7));
+  background: linear-gradient(135deg, #ffd700, #f5c000);
   color: #333;
 }
 
