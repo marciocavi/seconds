@@ -2,12 +2,34 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background: #fff; /* fundo branco padrão */
+  color: #07000A;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Marca d'água suave */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;  /* ajuste o tamanho conforme desejar */
+  height: 400px;
+  transform: translate(-50%, -50%);
   background-image: url('marca-dagua.png');
   background-size: contain;
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center;
-  color: #07000A;
+  opacity: 0.07;  /* ajuste aqui a transparência */
+  pointer-events: none; /* não bloqueia cliques */
+  z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima da marca d’água */
+header, section, footer {
+  position: relative;
+  z-index: 1;
 }
 
 /* === CABEÇALHO FIXO === */
