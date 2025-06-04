@@ -1,105 +1,40 @@
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  background: #f5f6fa;
-  color: #222;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Seconds - Soluções para Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho com nome e botão -->
+  <header style="text-align:center; padding:2em 0 1em 0; background:linear-gradient(135deg, #6d499f, #8a63d2); color:#fff;">
+    <h1 style="margin:0; font-size:2.1em; font-weight:700;">Seconds</h1>
+    <a href="https://www.seconds.com.br/planos/" class="botao-contrate">Contrate já</a>
+  </header>
 
-/* Card Roxo com Robô saltando */
-.card-roxo-salto {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  background: linear-gradient(135deg, #6d499f 0%, #8a63d2 100%);
-  border-radius: 22px;
-  padding: 1.8em 1.6em 1.6em 1.6em;
-  width: 360px;
-  min-height: 140px;
-  color: #fff;
-  box-shadow: 0 8px 28px rgba(70,50,130,0.13), 0 1.5px 10px rgba(0,0,0,0.09);
-  overflow: visible;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 2.5em auto;
-}
+  <!-- Card Roxo com Robô saltando -->
+  <div class="card-roxo-salto">
+    <div class="texto-card">
+      <strong>
+        Gestão integrada de Marketplace<br>
+        Para vender mais com mais lucratividade
+      </strong>
+    </div>
+    <img src="robo.png" alt="Robô mascote" class="robo-saltando">
+  </div>
 
-.texto-card {
-  flex: 1;
-  font-size: 1.12em;
-  line-height: 1.28em;
-  text-align: left;
-  z-index: 1;
-  word-break: break-word;
-}
+  <!-- Card Amarelo de exemplo -->
+  <div class="card-banner amarelo">
+    <strong>Solicite um Raio-X do seu negócio</strong>
+    <br>
+    Diagnóstico completo com recomendações personalizadas.
+    <br><br>
+    <a href="#" class="botao-contrate" style="background:#fff;color:#8a63d2;border:2px solid #8a63d2;">Raio X Gratuito</a>
+  </div>
 
-.robo-saltando {
-  position: absolute;
-  right: -36px;
-  bottom: -8px;
-  width: 120px;
-  max-width: 54%;
-  z-index: 2;
-  filter: drop-shadow(0 8px 16px rgba(60,40,110,0.23)) drop-shadow(0 2px 4px rgba(44,22,80,0.12));
-  background: transparent;
-  pointer-events: none;
-}
-
-/* Card Amarelo - exemplo moderno */
-.card-banner.amarelo {
-  background: linear-gradient(135deg, #ffd700 0%, #f5c000 100%);
-  color: #333;
-  border-radius: 22px;
-  box-shadow: 0 6px 18px rgba(220,170,30,0.10);
-  padding: 1.4em;
-  margin: 1.2em auto;
-  width: 360px;
-  text-align: left;
-  font-size: 1.12em;
-}
-
-/* Botão Contrate já - elegante, menor e sem sublinhado */
-.botao-contrate {
-  display: inline-block;
-  background: linear-gradient(180deg, #fffde4 0%, #ffe600 80%, #ffd600 100%);
-  color: #2d2200;
-  font-weight: 600;
-  font-size: 1em;
-  padding: 0.5em 1.2em;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 3px 0 #c6a900, 0 2px 12px rgba(0,0,0,0.10);
-  cursor: pointer;
-  text-decoration: none !important;
-  transition: all 0.13s;
-  outline: none;
-  margin: 0 auto;
-}
-.botao-contrate:hover,
-.botao-contrate:focus {
-  background: linear-gradient(180deg, #fffde4 0%, #ffd600 90%, #ffd000 100%);
-  filter: brightness(0.97);
-  box-shadow: 0 2px 0 #bca000, 0 1px 6px rgba(0,0,0,0.13);
-  transform: translateY(1px) scale(0.97);
-}
-.botao-contrate:active {
-  background: #ffe600;
-  box-shadow: 0 1px 0 #bca000;
-  transform: translateY(2px) scale(0.96);
-}
-
-/* Responsividade para mobile */
-@media (max-width: 480px) {
-  .card-roxo-salto,
-  .card-banner.amarelo {
-    width: 98vw;
-    min-width: 0;
-    padding: 1.1em 0.7em 1em 0.7em;
-  }
-  .robo-saltando {
-    width: 90px;
-    right: -20px;
-  }
-  .botao-contrate {
-    font-size: 0.95em;
-    padding: 0.45em 1em;
-  }
-}
+  <footer style="text-align:center; color:#aaa; padding:2em 0 1em 0;">
+    &copy; 2025 Seconds. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
