@@ -57,42 +57,32 @@ header {
 }
 
 .botao-contrate {
-  background: linear-gradient(180deg, #fffde4 0%, #ffe600 60%, #ffd600 100%);
-  color: #333;
-  font-weight: bold;
-  padding: 0.8em 2.5em;
-  border: 2px solid #c6a900;
-  border-radius: 12px;
-  box-shadow: 0 8px 0 #c6a900, 0 12px 20px rgba(0,0,0,0.20);
-  font-size: 1.25em;
+  display: inline-block;
+  background: linear-gradient(180deg, #fffde4 0%, #ffe600 80%, #ffd600 100%);
+  color: #2d2200;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 #c6a900, 0 2px 12px rgba(0,0,0,0.10);
   cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.13s;
   outline: none;
-  position: relative;
-  transition: all 0.16s cubic-bezier(0.4,0.2,0.1,1), box-shadow 0.13s;
-  overflow: hidden;
+  margin: 0 auto;
 }
-
-.botao-contrate::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 60%;
-  border-radius: 12px 12px 60% 60%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.45) 60%, transparent 100%);
-  pointer-events: none;
+.botao-contrate:hover,
+.botao-contrate:focus {
+  background: linear-gradient(180deg, #fffde4 0%, #ffd600 90%, #ffd000 100%);
+  filter: brightness(0.97);
+  box-shadow: 0 2px 0 #bca000, 0 1px 6px rgba(0,0,0,0.13);
+  transform: translateY(1px) scale(0.97);
 }
-
-.botao-contrate:hover, .botao-contrate:focus {
-  background: linear-gradient(180deg, #fffde4 0%, #ffe800 80%, #fff600 100%);
-  color: #111;
-  box-shadow: 0 4px 0 #c6a900, 0 8px 32px rgba(0,0,0,0.25);
-  transform: scale(1.06) translateY(-2px);
-}
-
 .botao-contrate:active {
-  box-shadow: 0 2px 0 #c6a900, 0 2px 8px rgba(0,0,0,0.17);
-  top: 4px;
-  transform: scale(0.98);
+  background: #ffe600;
+  box-shadow: 0 1px 0 #bca000;
+  transform: translateY(2px) scale(0.96);
 }
 
 @keyframes pulse-fast {
