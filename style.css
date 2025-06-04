@@ -12,17 +12,16 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 400px;  /* ajuste o tamanho conforme desejar */
-  height: 400px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('marca-dagua.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: 200px; /* ou outro valor que fique bom */
+  background-repeat: repeat; /* repete a imagem */
   background-position: center;
-  opacity: 0.2;  /* ajuste aqui a transparência */
-  pointer-events: none; /* não bloqueia cliques */
+  opacity: 0.15; /* ajuste conforme desejar */
+  pointer-events: none;
   z-index: 0;
 }
 
